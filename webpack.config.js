@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const { resolve } = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // react-hot-loader/patch activates hot module replacement
@@ -47,6 +47,16 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
+        enforce: "pre",
+        loader: "eslint-loader",
+        exclude: /node_modules/,
+        options: {
+          emitWarning: true,
+          configFile: "./.eslintrc.json"
+        }
+      },
+      {
+        test: /\.jsx?$/,
         loader: "babel-loader",
         exclude: /node_modules/,
         options: {
@@ -63,10 +73,10 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
-      template:'template.ejs',
-      appMountId: 'react-app-root',
+      template: "template.ejs",
+      appMountId: "react-app-root",
       title: "Billy's Beers",
-      filename: resolve(__dirname, "build", "index.html"),
-    }),
+      filename: resolve(__dirname, "build", "index.html")
+    })
   ]
 };
