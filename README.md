@@ -1,6 +1,6 @@
 # Billy's Beers
 
-#### _Single page web application with React. Tracks beer inventory and sales.. - September 9th, 2019_
+#### _Single page web application with React. Tracks beer inventory and sales. - September 9th, 2019_
 
 #### _By **Jessica Munoz**_
 
@@ -36,7 +36,8 @@ This website is used for patrons to view beer selection and for employees to upd
 * ESLint
 
 ## Component/Route Structure
-![ComponentRouteStructure](src/assets/images/ComponentRouteStructure.jpg)
+<!-- ![ComponentRouteStructure](src/assets/images/ComponentRouteStructure.jpg) -->
+![ComponentRouteStructure](https://user-images.githubusercontent.com/26944602/64568835-97217300-d310-11e9-92f7-691ce0398897.JPG)
 
 
 ## Support and contact details
