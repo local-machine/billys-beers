@@ -4,6 +4,12 @@ import PropTypes from 'prop-types';
 function Beer(props) {
   return (
     <div>
+      <style jsx>{`
+          div {
+            background-color: #dcdcdc;
+            font-family: Helvetica;
+          }
+        `}</style>
       <h3>{props.name}</h3>
       <h3>{props.brewery}</h3>
       <h3>{props.price}</h3>
@@ -11,7 +17,7 @@ function Beer(props) {
       <hr />
     </div>
   );
-}
+} 
 
 Beer.propTypes = {
   name: PropTypes.string.isRequired,
