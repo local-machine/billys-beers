@@ -11,13 +11,13 @@ var masterBeerList = [
   {
     name: 'Coronita',
     brewery: 'Cervecería Modelo',
-    price: 5,
+    price: 3,
     alcoholContent: '4.5%'
   },
   {
     name: 'Easy Street',
     brewery: 'Odell Brewing',
-    price: 5,
+    price: 7,
     alcoholContent: '4.6%'
   }
 ];
