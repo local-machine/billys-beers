@@ -9,15 +9,20 @@ function Beer(props) {
             background-color: #dcdcdc;
             font-family: Helvetica;
           }
+          .color-toggle:hover {
+            background-color: #f4dde1;
+          }
         `}</style>
-      <h3>{props.name}</h3>
-      <h3>{props.brewery}</h3>
-      <h3>{props.price}</h3>
-      <h3>{props.alcoholContent}</h3>
-      <hr />
+      <div className="color-toggle">
+        <h3>{props.name}</h3>
+        <h3>{props.brewery}</h3>
+        <h3>{props.price}</h3>
+        <h3>{props.alcoholContent}</h3>
+        <hr />
+      </div>
     </div>
   );
-} 
+}
 
 Beer.propTypes = {
   name: PropTypes.string.isRequired,

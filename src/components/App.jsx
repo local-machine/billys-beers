@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './Header';
 import BeerList from './BeerList';
+import { Switch, Route } from 'react-router-dom';
+import NewBeerForm from './NewBeerForm';
 
-function App(){
+function App() {
   return (
     <div>
       <style global jsx>{`
@@ -11,8 +13,11 @@ function App(){
             font-family: Helvetica;
           }
         `}</style>
-      <Header/>
-      <BeerList/>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={BeerList} />
+        <Route path='/newbeer' component={NewBeerForm}/>
+      </Switch>
     </div>
   );
 }
