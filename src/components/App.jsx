@@ -21,7 +21,7 @@ function App() {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 25%;
           }
           img:hover {
             animation: shake 0.5s;
