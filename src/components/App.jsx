@@ -4,6 +4,7 @@ import BeerList from './BeerList';
 import { Switch, Route } from 'react-router-dom';
 import NewBeerForm from './NewBeerForm';
 import billLaughs from '../assets/images/bill.jpg';
+import Error404 from './Error404';
 
 
 
@@ -46,6 +47,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={BeerList} />
         <Route path='/newbeer' component={NewBeerForm} />
+        <Route component={Error404} />
       </Switch>
       <img src={billLaughs} />
     </div>
