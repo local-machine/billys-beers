@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import BeerList from './BeerList';
 import { Switch, Route } from 'react-router-dom';
-import NewBeerForm from './NewBeerForm';
+import NewBeerControl from './NewBeerControl';
 import billLaughs from '../assets/images/bill.jpg';
 import Error404 from './Error404';
 
@@ -46,7 +46,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path='/' component={BeerList} />
-        <Route path='/newbeer' component={NewBeerForm} />
+        <Route path='/newbeer' component={NewBeerControl} />
         <Route component={Error404} />
       </Switch>
       <img src={billLaughs} />
