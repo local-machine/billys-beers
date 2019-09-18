@@ -1,7 +1,7 @@
 import React from 'react';
 import ConfirmationQuestions from './ConfirmationQuestions';
 import NewBeerForm from './NewBeerForm';
-
+import PropTypes from 'prop-types';
 
 
 class NewBeerControl extends React.Component {
@@ -22,7 +22,7 @@ class NewBeerControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <NewBeerForm />;
+      currentlyVisibleContent = <NewBeerForm onNewBeerCreation={this.props.onNewBeerCreation} />;
     } else {
       currentlyVisibleContent = <ConfirmationQuestions onAuthorizationConfirmation={this.handleAuthorizationConfirmation}/>;
     }
@@ -33,5 +33,10 @@ class NewBeerControl extends React.Component {
     );
   }
 }
+
+NewBeerControl.propTypes = {
+  onNewBeerCreation: PropTypes.func
+};
+
 
 export default NewBeerControl;

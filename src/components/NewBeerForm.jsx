@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewBeerForm() {
-
+function NewBeerForm(props) {
   let _name = null;
   let _brewery = null;
   let _price = null;
@@ -9,10 +9,12 @@ function NewBeerForm() {
 
   function handleNewBeerFormSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
-    console.log(_brewery.value);
-    console.log(_price.value);
-    console.log(_alcoholContent.value);
+    props.onNewBeerCreation({
+      name: _name.value,
+      brewery: _brewery.value,
+      price: _price.value,
+      alcoholContent: _alcoholContent.value
+    });
     _name.value = '';
     _brewery.value = '';
     _price.value = '';
@@ -25,27 +27,43 @@ function NewBeerForm() {
         <input
           type='text'
           id='name'
-          placeholder='Name' 
-          ref={(input) => {_name = input;}}/>
+          placeholder='Name'
+          ref={input => {
+            _name = input;
+          }}
+        />
         <input
           type='text'
           id='brewery'
-          placeholder='Brewery' 
-          ref={(input) => {_brewery = input;}}/>
+          placeholder='Brewery'
+          ref={input => {
+            _brewery = input;
+          }}
+        />
         <input
           type='number'
           id='price'
           placeholder='Price'
-          ref={(input) => {_price = input;}}/>
+          ref={input => {
+            _price = input;
+          }}
+        />
         <input
           type='text'
           id='alcoholContent'
-          placeholder='Alcohol Content' 
-          ref={(input) => {_alcoholContent = input}}/>
-        <button type='submit'>Add Beer</button>
+          placeholder='AlcoholContent'
+          ref={input => {
+            _alcoholContent = input;
+          }}
+        />
+        <button type="submit">Add Beer</button>
       </form>
     </div>
   );
 }
+
+NewBeerForm.propTypes = {
+  onNewBeerCreation: PropTypes.func
+};
 
 export default NewBeerForm;

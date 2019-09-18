@@ -1,32 +1,12 @@
 import React from 'react';
 import Beer from './Beer';
+import PropTypes from 'prop-types';
 
-var masterBeerList = [
-  {
-    name: '1664',
-    brewery: 'Kronenbourg Brewery',
-    price: 5,
-    alcoholContent: '5.0%'
-  },
-  {
-    name: 'Coronita',
-    brewery: 'Cervecería Modelo',
-    price: 3,
-    alcoholContent: '4.5%'
-  },
-  {
-    name: 'Easy Street',
-    brewery: 'Odell Brewing',
-    price: 7,
-    alcoholContent: '4.6%'
-  }
-];
-
-function BeerList(){
+function BeerList(props){
   return (
     <div>
       <hr/>
-      {masterBeerList.map((beer, index) =>
+      {props.beerList.map((beer, index) =>
         <Beer name={beer.name}
           brewery={beer.brewery}
           price={beer.price}
@@ -36,6 +16,10 @@ function BeerList(){
     </div>
   );
 }
+
+BeerList.propTypes = {
+  beerList: PropTypes.array
+};
 
 export default BeerList;
 
