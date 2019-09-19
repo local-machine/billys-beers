@@ -8,14 +8,14 @@
 
 This website is used for patrons to view beer selection and for employees to update beer selection.
 
-### Specs
+<!-- ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **** |  |  |
 | **** |  |  |
 | **** |  |  |
 | **** |  |  |
-| **** |  |  |
+| **** |  |  | -->
 
 
 
@@ -36,8 +36,7 @@ This website is used for patrons to view beer selection and for employees to upd
 * ESLint
 
 ## Component/Route Structure
-<!-- ![ComponentRouteStructure](src/assets/images/ComponentRouteStructure.jpg) -->
-![ComponentRouteStructure](https://user-images.githubusercontent.com/26944602/64568835-97217300-d310-11e9-92f7-691ce0398897.JPG)
+![ComponentRouteStructure](https://user-images.githubusercontent.com/26944602/65268863-e021b600-dacc-11e9-85c4-80e9770747fb.png)
 
 
 ## Support and contact details
