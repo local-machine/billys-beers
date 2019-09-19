@@ -30,6 +30,7 @@ This website is used for patrons to view beer selection and for employees to upd
 
 ## Technologies Used
 * JavaScript
+* React
 * npm | node.js
 * webpack
 * Babel
