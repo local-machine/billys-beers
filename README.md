@@ -1,6 +1,6 @@
 # Billy's Beers
 
-#### _Single page web application with React. Tracks beer inventory and sales. - September 9th, 2019_
+#### _Single page web application utilizing React with State. Tracks beer inventory and sales. - September 9th, 2019_
 
 #### _By **Jessica Munoz**_
 
@@ -24,6 +24,7 @@ This website is used for patrons to view beer selection and for employees to upd
 * Clone this repository
 * In Terminal, enter the command: npm install
 * In Terminal, enter the command: npm run start
+* Browse to http://localhost:8080
 
 ## Known Bugs
 * No known bugs at this time.
