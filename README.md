@@ -1,6 +1,6 @@
 # Billy's Beers
 
-#### _Single page web application utilizing React with State. Tracks beer inventory and sales. - September 9th, 2019_
+#### _Single page web application utilizing React. Tracks beer inventory and sales. - September 9th, 2019_
 
 #### _By **Jessica Munoz**_
 
